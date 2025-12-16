@@ -12,6 +12,7 @@ public class Desafio03_Extra {
 
         System.out.println("Informe o login");
         String log = t.nextLine();
+        t.nextLine();
         System.out.println("Informe a senha");
         String sen = t.nextLine();
 

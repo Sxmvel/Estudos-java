@@ -10,12 +10,11 @@ public class Desafio07_Extra {
 
         System.out.println("Escolha um número para encontrar seu fatorial");
 
-        int numero = t.nextInt();
-        int aux = numero;
+        long numero = t.nextInt();
 
-        for (int i = numero - 1; i >= 1 ; i--) {
-            numero = aux * i;
-            aux = numero;
+
+        for (long i = numero - 1; i >= 1 ; i--) {
+            numero = numero * i;
         }
         System.out.println(numero);
 

@@ -14,7 +14,6 @@ public class Desafio08_Random {
         int numero = random.nextInt(101);
         System.out.println(numero);
 
-
         int chute = -1;
 
         while(chute != numero){
@@ -28,10 +27,5 @@ public class Desafio08_Random {
                 System.out.println(s);
             }
         }
-
-
-
-
-
     }
 }

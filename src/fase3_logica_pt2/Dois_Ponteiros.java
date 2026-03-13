@@ -13,7 +13,9 @@ public class Dois_Ponteiros {
 
         int ponteiroEsquerda = 0;
         int ponteiroDireita = nums.length-1;
+
         while(ponteiroEsquerda < ponteiroDireita){
+
         int temp = nums[ponteiroEsquerda];
 
         nums[ponteiroEsquerda] = nums[ponteiroDireita];

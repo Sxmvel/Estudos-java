@@ -1,4 +1,4 @@
-package fase3_logica_pt2;
+package doisPonteiros;
 
 // Escreva um programa que inverta a ordem dos elementos de um array de inteiros.
 

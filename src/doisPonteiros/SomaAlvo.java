@@ -1,4 +1,4 @@
-package fase3_logica_pt2;
+package doisPonteiros;
 
 public class SomaAlvo {
 

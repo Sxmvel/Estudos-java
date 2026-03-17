@@ -17,6 +17,5 @@ public class removerDuplicatas {
         }
 
         System.out.println(escritor);
-
     }
 }

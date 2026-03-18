@@ -1,6 +1,6 @@
 package beecrowd;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class cifraCesar_bee {
@@ -9,18 +9,28 @@ public class cifraCesar_bee {
 
         Scanner t = new Scanner(System.in);
 
-        int casos = t.nextInt(); // numero de caso de teste
+        int casos = t.nextInt();
         t.nextLine();
 
         for (int i = 0; i < casos; i++) {
-            String palavra = t.nextLine(); // palavras do caso de teste
-            char[] caracter = palavra.toCharArray(); // Vai transformar caso de teste em caracter
 
+            String palavra = t.nextLine();
+            char[] caracter = palavra.toCharArray();
+            int cifra = t.nextInt();
+            t.nextLine();
             for (int j = 0; j < palavra.length(); j++) {
-                caracter[j] = (char) (caracter[j] - 1); // Volta uma posição de cada caracter
+
+                char letraAtual = caracter[j];
+                int valorDescrip = letraAtual - cifra;
+
+                if (valorDescrip < 'A') {
+                    valorDescrip = valorDescrip + 26;
+                }
+                caracter[j] = (char) valorDescrip;
             }
             System.out.println(new String(caracter));
         }
-        t.close();
+
+
     }
 }

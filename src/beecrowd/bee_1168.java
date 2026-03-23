@@ -25,6 +25,5 @@ public class bee_1168 {
             System.out.println(somaLeds + " leds");
         }
 
-
     }
 }

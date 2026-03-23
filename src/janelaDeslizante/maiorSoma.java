@@ -14,6 +14,7 @@ public class maiorSoma {
         int somaAtual = maiorSoma;
 
         // Vamos comecar a contar apartir de 3 e ir ate
+
         for (int i = k; i < nums.length; i++) {
 
             int numeroQueEntra = nums[i]; // Numero que vai entrar no indice. Se eu colocar K. Vai ficar fixa!

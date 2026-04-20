@@ -4,15 +4,20 @@ import java.util.Scanner;
 
 public class potencia {
 
-    public static int calcularPotencia(int base, int expoente) {
-        if(expoente == 0 ){
+    public static int calcularPotencia(int base, int expoente){
+
+        if(expoente == 1){
             return 1;
         }
 
-        return base * (calcularPotencia(base, expoente - 1));
+
+        return base * calcularPotencia(base, expoente - 1);
+
 
     }
-    public static void main(String[] args) {
+
+
+  public  static void main() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Digite a base:");
@@ -24,6 +29,7 @@ public class potencia {
         int resultado = calcularPotencia(base, expoente);
 
         System.out.println("O resultado de " + base + " elevado a " + expoente + " eh: " + resultado);
+
         scanner.close();
     }
 }

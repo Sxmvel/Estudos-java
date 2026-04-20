@@ -10,6 +10,7 @@ public class removerDuplicatas {
         int escritor = 1;
 
         for (int i = 1; i < nums.length; i++) {
+
             if(nums[i] != nums[i-1]){
                 nums[escritor] = nums[i]; // So chega aqui se o numero atual for diferente do anterior
                 escritor++;
@@ -17,5 +18,8 @@ public class removerDuplicatas {
         }
 
         System.out.println(escritor);
+
+
+
     }
 }
